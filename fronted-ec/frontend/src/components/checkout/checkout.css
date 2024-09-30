@@ -1,0 +1,64 @@
+/* checkout.css */
+
+.checkout-container {
+    max-width: 800px;
+    margin:  auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 6rem;
+}
+
+.checkout-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+.shipping-details, .order-summary, .payment-success {
+    margin-bottom: 20px;
+}
+
+.shipping-details form, .order-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.shipping-details input, .shipping-button, .payment-button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.shipping-details input:focus, .shipping-button:focus, .payment-button:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.shipping-button, .payment-button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.shipping-button:hover, .payment-button:hover {
+    background-color: #0056b3;
+}
+
+.payment-success {
+    text-align: center;
+    color: #28a745;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.payment-success p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}

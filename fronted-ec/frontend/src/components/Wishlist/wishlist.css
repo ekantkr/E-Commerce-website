@@ -1,0 +1,128 @@
+.wishlist-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 6rem;
+}
+
+.wishlist-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin-bottom: 40px;
+}
+
+.wishlist-item-details {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.wishlist-item-details:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.wishlist-item-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.wishlist-item-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.wishlist-price-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.wishlist-original-price {
+    font-size: 16px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.wishlist-discount-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+.increment-decrement-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.increment-btn, .decrement-btn {
+    border: none;
+    background-color: #f6f7f9;
+    color: #333;
+    font-size: 18px;
+    padding: 10px 25px; /* Increased padding for better touch targets */
+    border-radius: 9px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    width: 50px; /* Set a consistent width for buttons */
+}
+
+.increment-btn:hover, .decrement-btn:hover {
+    background-color: #090101;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Space between buttons */
+    width: 100%; /* Make sure it fills the width */
+}
+
+.wishlist-add-to-cart, .wishlist-delete-btn {
+    display: flex;
+    justify-content: center;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    text-align: center;
+    flex: 1; /* Allow buttons to grow equally */
+    margin: 5px; /* Small margin between buttons */
+}
+
+.wishlist-add-to-cart {
+    background-color: #000305;
+}
+
+.wishlist-add-to-cart:hover {
+    background-color: #f6f7f9;
+    color: black;
+    border: 2px solid black;
+}
+
+.wishlist-delete-btn {
+    background-color: #b94646;
+}
+
+.wishlist-delete-btn:hover {
+    background-color: #cc0000;
+}
